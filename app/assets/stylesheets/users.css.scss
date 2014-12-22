@@ -1,0 +1,24 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#user_index_main {
+	width:100vw;
+	height:100vh;
+	background-color: #f39c12;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#user_index_main h1 {
+	color:white;
+	font-size:55px;
+	width:250px;
+	margin:0 auto;
+	padding-top:10px;
+	// border:1px solid white;
+}
+
+#user_index_main h2 {
+	margin-top:20px;
+	color:white;
+	font-size:20px;
+}
