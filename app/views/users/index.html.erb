@@ -9,7 +9,11 @@
 <% end %> 
 	<div id="top_nav_title">
 		<h1>Welcome!</h1>
-		<h2>This is the User Index page!</h2>
-		<h2>What should we put here?</h2>
+	</div>
+	<div id="user_list" align="center">
+		<h3>WDI Alums/Students</h3>
+		<% @users.each do |user|%>
+			<%= user.email %>
+		<% end %>	
 	</div>
 </div>
