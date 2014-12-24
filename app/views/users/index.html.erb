@@ -8,12 +8,15 @@
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %> 
 	<div id="top_nav_title">
-		<h1>Welcome!</h1>
+		<h1>Project Portal</h1>
+	</div>
+	<div id="project_pitch_holder">
+		<h2>Project Pitch</h2>
 	</div>
 	<div id="user_list" align="center">
 		<h3>WDI Alums/Students</h3>
 		<% @users.each do |user|%>
-			<%= user.email %>
+			<li><%= link_to user.email, user_path(user.id)%></li>
 		<% end %>	
 	</div>
 </div>

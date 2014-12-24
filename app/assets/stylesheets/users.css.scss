@@ -8,10 +8,10 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-#user_index_main h1 {
+#top_nav_title h1 {
 	color:white;
 	font-size:55px;
-	width:250px;
+	width:346px;
 	margin:0 auto;
 	padding-top:10px;
 	// border:1px solid white;
@@ -31,8 +31,16 @@
 
 #user_list {
 	width:900px;
-	height:400px;
+	height:380px;
 	border:1px solid black;
 	margin:0 auto;
 	margin-top:40px;
+}
+
+#project_pitch_holder {
+	width:900px;
+	height:200px;
+	margin: 0 auto;
+	border:1px solid black;
+	margin-top:50px;
 }
