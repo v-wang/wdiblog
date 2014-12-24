@@ -9,11 +9,13 @@
 <% end %> 
 	<div id="top_nav_title">
 		<h1>Project Portal</h1>
+		<p>The Project Portal is a user-friendly platform designed to encourage developers to share ideas about projects and to collaborate with one another. </p>
 	</div>
+
 	<div id="project_pitch_holder">
-		<h2>Project Pitch</h2>
+		<h2><img src="/assets/gear25.png" alt="">Project Pitch</h2>
 	</div>
-	<div id="user_list" align="center">
+	<div id="user_list">
 		<h3>WDI Alums/Students</h3>
 		<% @users.each do |user|%>
 			<li><%= link_to user.email, user_path(user.id)%></li>
