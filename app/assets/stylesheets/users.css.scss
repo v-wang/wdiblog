@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #user_index_main {
 	width:100vw;
-	height:100vh;
+	height:1200px;
 	background-color: #f39c12;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -22,32 +22,33 @@
 	color:white;
 	width:900px;
 	margin:0 auto;
+	letter-spacing:1px;
+	line-height:20px;
 }
 
-#project_pitch_holder h2 {
+.index_h2_subsection {
 	margin-top:20px;
+	margin-bottom:10px;
 	color:white;
 	font-size:30px;
+
 }
 
-#project_pitch_holder img {
+.index_h2_subsection img {
 	width:30px;
-	margin-right:10px;
+	margin-right: 10px;
 }
 
-#user_list h3 {
-	color:white;
-	font-size:18px;
-	margin-bottom:20px;
-}
+
 
 #user_list {
 	width:900px;
 	height:320px;
-	border:1px solid black;
+	border-top:2px solid white;
 	margin:0 auto;
 	margin-top:40px;
 }
+
 
 #project_pitch_holder {
 	width:900px;
@@ -56,3 +57,32 @@
 	border-top:2px solid white;
 	margin-top:50px;
 }
+
+.user_info_box_holder {
+	width:200px;
+	height:40px;
+	border:1px solid black;
+}
+
+#post_newsfeed_holder {
+	width:900px;
+	height:80px;
+	border-top:2px solid white;
+	margin:0 auto;
+}
+
+#post_newsfeed {
+	width:100%;
+	min-height:300px;
+	border:1px solid black;
+	background-color:rgba(255,255,255,0.5);
+	padding-top:40px;
+}
+
+#post_newfeed p {
+	color:white;
+	font-size:14px;
+}
+
+
+

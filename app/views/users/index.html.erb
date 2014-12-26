@@ -9,16 +9,41 @@
 <% end %> 
 	<div id="top_nav_title">
 		<h1>Project Portal</h1>
-		<p>The Project Portal is a user-friendly platform designed to encourage developers to share ideas about projects and to collaborate with one another. </p>
+		<p>The Project Portal is a user-friendly platform designed to encourage developers who graduated from The New York Code + Design Academy to share ideas about projects and to collaborate with one another. </p>
 	</div>
 
 	<div id="project_pitch_holder">
-		<h2><img src="/assets/gear25.png" alt="">Project Pitch</h2>
+		<h2 class="index_h2_subsection"><img src="/assets/gear25.png" alt="">Project Pitch</h2>
+		<p>form to create new project goes here</p>
 	</div>
 	<div id="user_list">
-		<h3>WDI Alums/Students</h3>
+		<h2 class="index_h2_subsection"><img src="/assets/student6.png" alt="">WDI Alums/Students</h2>
 		<% @users.each do |user|%>
+			<div class="user_info_box_holder">
 			<li><%= link_to user.email, user_path(user.id)%></li>
+			</div>
 		<% end %>	
+	</div>
+	<div id="post_newsfeed_holder">
+		<h2 class="index_h2_subsection"><img src="/assets/news.png" alt="">newsfeed</h2>
+		<div id="post_newsfeed">	
+			<%= form_for @post, :url => {:controller => "posts", :action => "create" } do |f| %>
+				
+				<%= f.label :message %>
+				<%= f.text_area :message %>
+				
+				<%= f.submit %>
+
+			<% end %>
+			
+			
+			<p>ALL POSTS</p>
+			<% @posts.each do |post| %>
+				<li><%= post.message %> | <%= post.created_at %></li>
+			<% end %>
+			
+			
+		</div>
+		
 	</div>
 </div>
